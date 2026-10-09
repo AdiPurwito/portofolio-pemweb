@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Adi Purwito, mahasiswa Informatika Universitas Muhammadiyah Malang dengan fokus keamanan jaringan.">
+  <meta name="color-scheme" content="light dark">
+  <title>Adi Purwito | Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
+
+  <header class="topbar">
+    <a class="topbar__logo" href="#beranda" aria-label="Adi Purwito, ke beranda">adi.purwito</a>
+    <nav aria-label="Navigasi halaman">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="konten-utama">
+
+    <section class="hero" id="beranda" aria-labelledby="judul-hero">
+      <div class="hero__inner">
+        <h1 id="judul-hero">Adi<br>Purwito</h1>
+        <p class="hero__intro">
+          Mahasiswa Informatika UMM semester 5. Saya sedang tertarik belajar keamanan jaringan:
+          bagaimana serangan DDoS bekerja, dan bagaimana honeypot bisa merekamnya.
+        </p>
+        <ul class="hero__fakta">
+          <li>Universitas Muhammadiyah Malang</li>
+          <li>Semester 5</li>
+          <li>Malang, Jawa Timur</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="wadah">
+
+    <section class="bagian" id="tentang" aria-labelledby="judul-tentang">
+      <h2 id="judul-tentang">Tentang</h2>
+      <div class="bagian__isi">
+        <p>
+          Saya suka memahami sistem sampai ke lapisan bawahnya. Di kuliah itu
+          berarti subnetting di Packet Tracer dan praktikum Linux. Di luar kuliah,
+          saya membangun aplikasi web dan mobile supaya konsepnya benar-benar
+          dipakai, bukan hanya dibaca.
+        </p>
+        <p>
+          Saat ini saya sedang menyusun ide riset tentang deteksi serangan DDoS
+          dengan bantuan honeypot.
+        </p>
+      </div>
+    </section>
+
+    <section class="bagian" id="pendidikan" aria-labelledby="judul-pendidikan">
+      <h2 id="judul-pendidikan">Pendidikan</h2>
+      <div class="bagian__isi">
+        <article>
+          <header class="baris-judul">
+            <h3>S1 Informatika</h3>
+            <p class="meta"><time datetime="2024">2024</time> sampai sekarang</p>
+          </header>
+          <p>Universitas Muhammadiyah Malang</p>
+
+          <table>
+            <caption>Mata kuliah terpilih</caption>
+            <thead>
+              <tr>
+                <th scope="col">Mata kuliah</th>
+                <th scope="col">Yang dikerjakan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Jaringan Komputer</th>
+                <td>Pengalamatan IP, subnetting, VLSM, simulasi Packet Tracer</td>
+              </tr>
+              <tr>
+                <th scope="row">Sistem Operasi</th>
+                <td>Praktikum Linux di mesin virtual</td>
+              </tr>
+              <tr>
+                <th scope="row">Struktur Data</th>
+                <td>Implementasi struktur data dengan Java</td>
+              </tr>
+              <tr>
+                <th scope="row">Basis Data</th>
+                <td>Skema dan query SQL di Oracle</td>
+              </tr>
+              <tr>
+                <th scope="row">Grafika Komputer</th>
+                <td>Visualisasi kurva parametrik dengan Python</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+    </section>
+
+    <section class="bagian" id="keahlian" aria-labelledby="judul-keahlian">
+      <h2 id="judul-keahlian">Keahlian</h2>
+      <div class="bagian__isi">
+        <dl class="keahlian">
+          <dt>Web</dt>
+          <dd>HTML5, CSS3, JavaScript, Next.js, Tailwind CSS</dd>
+          <dt>Mobile</dt>
+          <dd>React Native, Expo</dd>
+          <dt>Bahasa</dt>
+          <dd>Python, Java, SQL</dd>
+          <dt>Jaringan dan sistem</dt>
+          <dd>Subnetting, Cisco Packet Tracer, Linux</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="bagian" id="proyek" aria-labelledby="judul-proyek">
+      <h2 id="judul-proyek">Proyek</h2>
+      <div class="bagian__isi">
+
+        <article class="proyek">
+          <header class="baris-judul">
+            <h3>Partimeku</h3>
+            <p class="meta">Next.js, Supabase</p>
+          </header>
+          <p>Platform web yang mempertemukan pencari kerja paruh waktu dengan pemberi kerja. Dikerjakan full-stack, dari antarmuka sampai basis data.</p>
+          <a class="repo" href="https://github.com/AdiPurwito/Partimeku" target="_blank" rel="noopener noreferrer" aria-label="Repositori GitHub Partimeku">
+            <svg class="ikon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+            <span>Lihat repositori</span>
+          </a>
+        </article>
+
+        <article class="proyek">
+          <header class="baris-judul">
+            <h3>Absolute Cinema</h3>
+            <p class="meta">React Native, Expo</p>
+          </header>
+          <p>Aplikasi streaming film untuk ponsel. Proyek kelompok tiga orang dengan repositori GitHub bersama.</p>
+          <a class="repo" href="https://github.com/FarelIrw/ABSOLUTE-CINEMA" target="_blank" rel="noopener noreferrer" aria-label="Repositori GitHub Absolute Cinema">
+            <svg class="ikon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+            <span>Lihat repositori</span>
+          </a>
+        </article>
+
+        <article class="proyek">
+          <header class="baris-judul">
+            <h3>Visualizer Kurva Parametrik</h3>
+            <p class="meta">Python</p>
+          </header>
+          <p>Program yang menggambar kurva dari persamaan parametrik, dibuat untuk mata kuliah Grafika Komputer.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="bagian" id="kontak" aria-labelledby="judul-kontak">
+      <h2 id="judul-kontak">Kontak</h2>
+      <div class="bagian__isi">
+        <p>Terbuka untuk diskusi, kolaborasi, dan magang.</p>
+        <address>
+          <a class="email" href="mailto:adipurwito180@gmail.com">
+            <svg class="ikon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+              <polyline points="3,7 12,13 21,7"></polyline>
+            </svg>
+            <span class="email__teks">adipurwito180@gmail.com</span>
+          </a>
+
+          <ul class="tautan">
+            <li>
+              <a href="https://github.com/AdiPurwito" target="_blank" rel="noopener noreferrer">
+                <svg class="ikon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/void_gnc/" target="_blank" rel="noopener noreferrer">
+                <svg class="ikon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </section>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Adi Purwito, Malang. Tugas 1 Pemrograman Web, Semester Ganjil TA 2026/2027.</p>
+  </footer>
+</body>
+</html>
