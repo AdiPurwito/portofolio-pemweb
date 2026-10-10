@@ -127,6 +127,82 @@ a {
   color: var(--aksen);
 }
 
+/* Tombol hamburger (hanya tampil di mobile) */
+.menu-toggle,
+.menu-tombol {
+  display: none;
+}
+
+.menu-tombol {
+  width: 2.75rem;
+  height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--garis);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu-tombol__garis,
+.menu-tombol__garis::before,
+.menu-tombol__garis::after {
+  display: block;
+  width: 1.25rem;
+  height: 2px;
+  background: var(--teks);
+  transition: transform 0.2s ease, background-color 0.2s ease, top 0.2s ease;
+}
+
+.menu-tombol__garis {
+  position: relative;
+}
+
+.menu-tombol__garis::before,
+.menu-tombol__garis::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.menu-tombol__garis::before {
+  top: -6px;
+}
+
+.menu-tombol__garis::after {
+  top: 6px;
+}
+
+.menu-toggle:checked + .menu-tombol .menu-tombol__garis {
+  background: transparent;
+}
+
+.menu-toggle:checked + .menu-tombol .menu-tombol__garis::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menu-toggle:checked + .menu-tombol .menu-tombol__garis::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.menu-toggle:focus-visible + .menu-tombol {
+  outline: 3px solid var(--aksen);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* 4. Hero ---------------------------------------------------- */
 .hero {
   background: var(--hero-latar);
@@ -438,15 +514,40 @@ a:focus-visible {
     flex-direction: column;
   }
 
-  .topbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+  .menu-tombol {
+    display: flex;
+  }
+
+  .topbar nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0.25rem clamp(1.25rem, 5vw, 3rem) 1rem;
+    background: var(--latar);
+    border-bottom: 1px solid var(--garis);
+  }
+
+  .menu-toggle:checked ~ nav {
+    display: block;
   }
 
   .topbar ul {
-    flex-wrap: wrap;
-    gap: 0.25rem 1.25rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .topbar nav a {
+    display: block;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--garis);
+    color: var(--teks);
+    font-size: 1.15rem;
+  }
+
+  .topbar li:last-child a {
+    border-bottom: none;
   }
 
   .bagian {
@@ -492,7 +593,10 @@ a:focus-visible {
   }
 
   .proyek,
-  .tautan a {
+  .tautan a,
+  .menu-tombol__garis,
+  .menu-tombol__garis::before,
+  .menu-tombol__garis::after {
     transition: none;
   }
 }
